@@ -20,7 +20,7 @@ public class MessageController {
     @SendTo("/topic/message")
     public ResponseMessage greeting(RequestMessage requestMessage) {
 
-        log.debug("USER_NAME={}", requestMessage.getUserName());
+        log.info("requestMessage: {}", requestMessage.toString());
         chatService.putMessage(requestMessage);
 
         return new ResponseMessage(requestMessage.getUserName(), requestMessage.getContent());
