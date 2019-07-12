@@ -5,4 +5,4 @@ CREATE TABLE IF NOT EXISTS chat (
   message VARCHAR(100),
 );
 
-INSERT INTO chat (room_id, commented_datetime, user_name, message) VALUES (1, null, 'test1', 'message123');
+INSERT INTO chat (room_id, commented_datetime, user_name, message) VALUES (1, null, 'admin', 'please enjoy chat room!!');
